@@ -88,12 +88,45 @@ h1, h2, h3, h4, h5, h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ff6733;
 }
-#header h2 span {
-  color: #fff;
-  border-bottom: 2px solid #ff6733;
-  padding-bottom: 2px;
+#header h2  span::before{
+			content: "writer";
+			animation: animate infinite 3s;
+			padding-left: 1px;
+			border-bottom: 2px solid #ff6733;
+			color: #fff;
+
+}
+		@keyframes animate {
+
+			0% {
+				content: "writer";
+				opacity: 100%;
+			}
+
+			19% {
+				content: "writer";
+				opacity: 0%;
+			}
+
+			38% {
+				content: "web developer";
+				opacity: 0%;
+			}
+			57%{
+			    content: "web developer";
+				opacity: 100%;
+			}
+			76%{
+			    content: "web developer";
+				opacity: 0%;
+			}
+			95%{
+			    content: "writer";
+				opacity: 0%;
+			}
+
 }
 #header img {
   padding: 0;
