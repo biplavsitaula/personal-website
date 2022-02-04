@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
  #header h2  span::before{
 			content: "writer";
 			animation: animate infinite 3s;
-			padding-left: 10px;
+			padding-left: 1px;
 			border-bottom: 2px solid #ff6733;
 			color: #fff;
 
@@ -105,8 +105,12 @@ h1, h2, h3, h4, h5, h6 {
 				content:"writer";
 				
 			}
+			50%{
+				opacity: 0%;
+			}
 
 			66% {
+				opacity: 100%;
 				content:"web-developer";
 				
 			}
@@ -119,8 +123,12 @@ h1, h2, h3, h4, h5, h6 {
 				content:"writer";
 				
 			}
+			50%{
+				opacity: 0%;
+			}
 
 			66% {
+				opacity: 100%;
 				content:"web-developer";
 				
 			}
