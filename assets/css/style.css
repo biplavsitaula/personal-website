@@ -101,31 +101,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 		@keyframes animate {
 
-			0% {
+			33% {
+				content:"writer";
 				
-				border-bottom: 2px solid #ff6733;
 			}
 
-			19% {
+			66% {
+				content:"web-developer";
 				
-				border-bottom: 2px solid #fff;
 			}
 
-			38% {
+			
+
+}
+@-webkit-keyframes animate {
+			33% {
+				content:"writer";
 				
-				border-bottom: 2px solid #000;
 			}
-			57%{
-			   
-				border-bottom: 2px solid #ff6733;
-			}
-			76%{
-			   
-				border-bottom: 2px solid #fff;
-			}
-			95%{
-			   
-				border-bottom: 2px solid #000;
+
+			66% {
+				content:"web-developer";
+				
 			}
 
 }
