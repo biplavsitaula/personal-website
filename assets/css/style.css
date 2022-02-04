@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #ff6733;
   color: #fff;
 
-}
+
   @keyframes animate {
 
 			0% {
@@ -127,6 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 				opacity: 0%;
 			}
 
+}
 }
 #header img {
   padding: 0;
