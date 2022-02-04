@@ -91,33 +91,42 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff6733;
 }
 
-  @keyframes animate {	
-	20% {
+ #header h2  span::before{
+			content: "writer";
+			animation: animate infinite 3s;
+			padding-left: 1px;
+			border-bottom: 2px solid #ff6733;
+			color: #fff;
+
+}
+		@keyframes animate {
+
+			0% {
 				content: "writer";
-				opacity: 0%;
-		
+				opacity: 100%;
 			}
 
-	40% {
+			19% {
+				content: "writer";
+				opacity: 0%;
+			}
+
+			38% {
 				content: "web developer";
 				opacity: 0%;
 			}
-	60%{
+			57%{
 			    content: "web developer";
 				opacity: 100%;
 			}
-	80%{
+			76%{
 			    content: "web developer";
 				opacity: 0%;
 			}
-
-}
-#header h2  span{
-  content: "writer";
-  animation: animate infinite 3s;
-  padding-left: 5px;
-  border-bottom: 2px solid #ff6733;
-  color: #fff;
+			95%{
+			    content: "writer";
+				opacity: 0%;
+			}
 
 }
 
