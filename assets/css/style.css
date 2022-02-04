@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff6733;
 }
 #header h2  span{
-  content: "writer";
+  content: "";
   animation: animate infinite 3s;
   padding-left: 1px;
   border-bottom: 2px solid #ff6733;
