@@ -90,14 +90,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
   color: #ff6733;
 }
-#header h2  span{
-  content: "";
+#header h2  span::before{
+  content: "writer";
   animation: animate infinite 3s;
   padding-left: 1px;
   border-bottom: 2px solid #ff6733;
   color: #fff;
 
-
+}
   @keyframes animate {
 
 			0% {
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 			}
 
 }
-}
+
 #header img {
   padding: 0;
   margin: 0;
