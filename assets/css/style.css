@@ -430,6 +430,7 @@ section .container {
 # About
 --------------------------------------------------------------*/
 .about-me .content h3::before {
+  content: "Writer";
   font-weight: 700;
   font-size: 26px;
   color: #ff6733;
@@ -460,6 +461,33 @@ section .container {
 	opacity: 0;
 	content:"Writer";
   }
+}
+@-webkit-keyframes Blink {
+			0% {
+	content: "Writer";
+	opacity: 100%;
+  }
+  20% {
+	content: "Writer";
+	opacity: 0%;
+  }
+  25%{
+	opacity: 0;
+	content: "Web developer";
+  }
+  50% {
+	content: "Web developer";
+	opacity: 100%;
+  }
+  70%{  
+	content: "Web developer";  
+	opacity: 0%;
+  }
+  75%{
+	opacity: 0;
+	content:"Writer";
+  }
+
 }
 .about-me .content ul {
   list-style: none;
