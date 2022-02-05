@@ -101,43 +101,57 @@ h1, h2, h3, h4, h5, h6 {
 			text-shadow: 1px 1px 3px #ff6733;
 
 }
-		@keyframes animate {
+@keyframes animate {
 
 			0% {
-				content: "writer";
-				opacity: 100%;
-			}
-
-			25% {
-		
-				opacity: 0%;
-			}
-
-			50% {
-				content: "web developer";
-				opacity: 100%;
-			}
-			75%{
-			    
-				opacity: 0%;
-			}
+	content: "writer";
+	opacity: 100%;
+  }
+  20% {
+	content: "writer";
+	opacity: 0%;
+  }
+  25%{
+	opacity: 0;
+	content: "web developer";
+  }
+  50% {
+	content: "web developer";
+	opacity: 100%;
+  }
+  70%{  
+	content: "web developer";  
+	opacity: 0%;
+  }
+  75%{
+	opacity: 0;
+	content:"writer";
+}}
 @-webkit-keyframes animate {
 			0% {
-				content:"writer";
-				
-			}
-			25%{
-				opacity: 0%;
-			}
-
-			50% {
-				opacity: 100%;
-				content:"web-developer";
-				
-			}
-			75%{
-				opacity: 0%;
-			}
+	content: "writer";
+	opacity: 100%;
+  }
+  20% {
+	content: "writer";
+	opacity: 0%;
+  }
+  25%{
+	opacity: 0;
+	content: "web developer";
+  }
+  50% {
+	content: "web developer";
+	opacity: 100%;
+  }
+  70%{  
+	content: "web developer";  
+	opacity: 0%;
+  }
+  75%{
+	opacity: 0;
+	content:"writer";
+  }
 
 }
 			
@@ -415,10 +429,37 @@ section .container {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about-me .content h3 {
+.about-me .content h3::before {
   font-weight: 700;
   font-size: 26px;
   color: #ff6733;
+  animation: Blink 3s infinite;
+}
+@keyframes Blink{
+  0% {
+	content: "Writer";
+	opacity: 100%;
+  }
+  20% {
+	content: "Writer";
+	opacity: 0%;
+  }
+  25%{
+	opacity: 0;
+	content: "Web developer";
+  }
+  50% {
+	content: "Web developer";
+	opacity: 100%;
+  }
+  70%{  
+	content: "Web developer";  
+	opacity: 0%;
+  }
+  75%{
+	opacity: 0;
+	content:"Writer";
+  }
 }
 .about-me .content ul {
   list-style: none;
